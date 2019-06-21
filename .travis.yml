@@ -1,0 +1,29 @@
+sudo: false
+language: python
+python:
+  - "2.7"
+  - "3.3" #! Output errors in Travis!
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "pypy"
+# command to install dependencies
+before_install:
+  - "pip install tox"
+install:
+  - "pip install ."
+  - "pip install -r requirements.txt"
+  - "pip install python-coveralls"
+addons:
+  sonarcloud:
+    organization: "jmramosr_PyJson2C"
+# command to run tests
+script:
+  - python setup.py test
+  - coverage run --source PyJson2C setup.py test
+  - coverage combine
+  - coverage report
+  - coverage xml
+  - sonar-scanner -Dsonar.projectKey=jmramosr_PyJson2C -Dsonar.sources=. -Dsonar.organization=jmramosr-github -Dsonar.python.coverage.reportPath=coverage.xml -Dsonar.exclusions=coverage.xml,setup.py,versioneer.py,docs/*,tests/*,PyJson2C/_*
+after_success:
+  - coveralls
