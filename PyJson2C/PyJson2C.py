@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 
-def pyJson2CMain():
+def pyjson2c_main():
     pass
 
 
 if __name__ == '__main__':
     """Let's begin"""
-    pyJson2CMain()
+    pyjson2c_main()
