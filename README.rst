@@ -46,11 +46,11 @@ ROADMAP CHECKLIST
 * Architect the repository✅
     * Create the Github repository ✔️
         * Create a complete python project in Github ⬜️
-    * SonarCloud ❌️
+    * SonarCloud ✔️
         * Link SonarCloud with the project ⬜️
     * Coveralls ❌️
         * Link Coveralls with the project ⬜️
-    * Travis ❌️
+    * Travis ✔️
         * Link Travis with the project ⬜️
     * ReadTheDocs ❌️
         * Link ReadTheDocs with the project ⬜️
@@ -60,11 +60,14 @@ ROADMAP CHECKLIST
     * System tests
         * Generate a c or h file from a json file, returning a valid file, with custom spacing.
     * Integration tests
-        * Create custom spacing options
+        * Create Custom Spacing Options
         * Create Environment
         * Create Language extensions
         * Create Documentation
         * Create Character sets
+        * Create Standard libraries access
+    * Unit tests
+        * Create from json elements, valid C snippets
         * Create Identifiers
         * Create Types
         * Create Constants
@@ -80,9 +83,6 @@ ROADMAP CHECKLIST
         * Create Pointers and arrays
         * Create Structures and unions
         * Create Preprocessing directives
-        * Create Standard libraries access
-    * Unit tests
-        * Create from json elements, valid C snippets
 * Wishlist
     * Create a good Python codebase to be useful to users ⬜️
     * Create a complete Json translator into C code ⬜️
