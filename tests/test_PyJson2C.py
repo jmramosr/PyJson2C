@@ -19,8 +19,5 @@ class test_class(unittest.TestCase):
     def test01(self):
         pass
 
-    def test02(self):
-        pass
-
     def tearDown(self):
         pass
